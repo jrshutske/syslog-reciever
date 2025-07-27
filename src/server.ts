@@ -8,8 +8,8 @@ async function main() {
       `  (1) UDP\n` +
       `  (2) TCP\n` +
       `Default is UDP (1): `,
-    ["1", "2"],
-    "1"
+    "1",
+    ["1", "2"]
   );
 
   if (answer === "1") startUdpServer();

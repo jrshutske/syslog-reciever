@@ -1,0 +1,26 @@
+{
+  "name": "syslog-receiver",
+  "version": "1.0.0",
+  "main": "src/server.ts",
+  "bin": "dist/server.js",
+  "scripts": {
+    "start": "npx ts-node ./src/server.ts",
+    "test": "npx ts-node ./src/test.ts",
+    "buildexe": "npx tsc && pkg . --targets node16-win-x64 --output syslog-server.exe"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "syslog-client": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/syslog-client": "^1.1.5",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

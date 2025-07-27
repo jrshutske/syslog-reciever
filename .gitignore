@@ -1,3 +1,6 @@
 node_modules
 dist
-email-server.exe
+syslog-server.exe
+error.log
+combined.log
+.vscode
